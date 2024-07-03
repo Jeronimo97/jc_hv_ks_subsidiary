@@ -1,0 +1,13 @@
+{
+    "item.opensignals.jcsystemtool": "JC Subsidiary Signals Item",
+    "block.opensignals.jchvsignal": "JC HV-Signal",
+    "block.opensignals.jckssignal": "JC KS-Signal",
+    "property.zs6.name": "Zs6",
+    "property.zs6.desc": "",
+    "property.ks_repeat.name": "Repeater",
+    "property.ks_repeat.desc": "",
+    "property.ks_short.name": "Shortened",
+    "property.ks_short.desc": "",
+    "property.kombisignal_light.name": "N/A",
+    "property.kombisignal_light.desc": "N/A"
+}

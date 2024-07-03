@@ -1,0 +1,34 @@
+{
+    "KS42Distant": [
+        "OFF",
+        "KS1",
+        "KS1_BLINK",
+        "KS2",
+        "KS_STATUS_LIGHT"
+    ],
+    "KS42": [
+        "OFF",
+        "HP0",
+        "KS1",
+        "KS1_BLINK",
+        "KS2",
+        "KS_ZS1",
+        "KS_ZS7",
+        "KS_SHUNTING",
+        "KS_STATUS_LIGHT"
+    ],
+    "KS42Main": [
+        "OFF",
+        "HP0",
+        "KS1",
+        "KS_ZS1",
+        "KS_ZS7",
+        "KS_SHUNTING",
+        "KS_STATUS_LIGHT"
+    ],
+    "KSLight": [
+        "OFF",
+        "KOMBISIGNAL_REPEAT",
+        "KOMBISIGNAL_LIGHT"
+        ]
+}

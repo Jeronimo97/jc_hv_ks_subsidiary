@@ -1,0 +1,28 @@
+{
+    "currentSignal": "jchvsignal",
+    "allStates": {
+        "ZS1": [
+            "zs1.TRUE"
+        ],
+        "ZS7": [
+            "zs7.TRUE"
+        ],
+        "ZS8": [
+            "zs6.ZS8"
+        ],
+        "ZP9": [
+            "zs6.ZP9"
+        ],
+        "SH1": [
+            "stopsignal.SHUNTING"
+        ],
+        "STATUSLIGHT": [
+            "stopsignal.OFF",
+            "hphome.OFF",
+            "hpblock.OFF",
+            "identifier.TRUE",
+            "vrlight.TRUE",
+            "distantsignal.OFF"
+        ]
+    }
+}

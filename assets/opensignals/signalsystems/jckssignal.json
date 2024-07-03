@@ -1,0 +1,120 @@
+{
+    "systemProperties": {
+        "placementToolName": "jcsystemtool",
+        "canLink": true,
+        "defaultHeight": 6,
+        "customNameRenderHeight": 4.95,
+        "colors": [
+            16777215,
+            16761344
+        ],
+        "renderHeights": {
+            "config(KOMBITYPE.DISTANT)": -1
+        }
+    },
+    "seProperties": [
+        {
+            "name": "kombitype",
+            "enumClass": "KSType",
+            "defaultState": "OFF",
+            "changeableStage": "GUISTAGE"
+        },
+        {
+            "name": "kombisignal",
+            "enumClass": "KS42",
+            "defaultState": "OFF",
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "config(KOMBITYPE.KS_STOPSIGNAL)"
+        },
+        {
+            "name": "kombisignal_main",
+            "enumClass": "KS42Main",
+            "defaultState": "OFF",
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "config(KOMBITYPE.KS_MAIN)"
+        },
+        {
+            "name": "kombisignal_distant",
+            "enumClass": "KS42Distant",
+            "defaultState": "OFF",
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "config(KOMBITYPE.DISTANT)"
+        },
+        {
+            "name": "kombisignal_light",
+            "enumClass": "KSLight",
+            "defaultState": "OFF",
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "config(KOMBITYPE.DISTANT)"
+        },
+        {
+            "name": "mastsign",
+            "enumClass": "MastSignal",
+            "defaultState": "OFF",
+            "changeableStage": "GUISTAGE"
+        },
+        {
+            "name": "mastsigndistant",
+            "defaultState": false,
+            "changeableStage": "GUISTAGE"
+        },
+        {
+            "name": "ne2",
+            "defaultState": false,
+            "changeableStage": "GUISTAGE"
+        },
+        {
+            "name": "zs2",
+            "enumClass": "ZS32",
+            "defaultState": "OFF",
+            "autoname": true
+        },
+        {
+            "name": "zs2v",
+            "enumClass": "ZS32",
+            "defaultState": "OFF",
+            "autoname": true
+        },
+        {
+            "name": "zs3",
+            "enumClass": "ZS32",
+            "defaultState": "OFF",
+            "autoname": true
+        },
+        {
+            "name": "zs3v",
+            "enumClass": "ZS32",
+            "defaultState": "OFF",
+            "autoname": true
+        },
+        {
+            "name": "zs6",
+            "enumClass": "ZS32",
+            "defaultState": "OFF",
+            "autoname": true
+        },
+        {
+            "name": "zs12",
+            "defaultState": false,
+            "changeableStage": "GUISTAGE"
+        },
+        {
+            "name": "ks_repeat",
+            "defaultState": false,
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "!config(KOMBITYPE.OFF)"
+        },
+        {
+            "name": "ks_short",
+            "defaultState": false,
+            "changeableStage": "APISTAGE_NONE_CONFIG",
+            "autoname": true,
+            "dependencies": "!config(KOMBITYPE.OFF)"
+        }
+    ]
+}

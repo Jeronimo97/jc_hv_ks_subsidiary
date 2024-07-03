@@ -1,0 +1,11 @@
+item.jcsystemtool.name=JC Zusatzsignale Item
+tile.jchvsignal.name=JC HV-Signal
+tile.jckssignal.name=JC KS-Signal
+property.zs6.name=Zs6
+property.zs6.desc=
+property.ks_repeat.name=Wiederholer
+property.ks_repeat.desc=
+property.ks_short.name=Verkürzt
+property.ks_short.desc=
+property.kombisignal_light.name=N/A
+property.kombisignal_light.desc=N/A

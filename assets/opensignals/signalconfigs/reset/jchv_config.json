@@ -1,0 +1,22 @@
+{
+    "currentSignal": "jchvsignal",
+    "values": {
+        "true": [
+            "stopsignal.HP0",
+            "hphome.HP0",
+            "hpblock.HP0",
+            "distantsignal.VR0",
+            "zs3.OFF",
+            "zs3v.OFF",
+            "zs2.OFF",
+            "zs2v.OFF",
+            "zs6.OFF",
+            "zs1.FALSE",
+            "zs7.FALSE",
+            "identifier.FALSE"
+        ],
+        "!config(HPTYPE.OFF)": [
+            "distantsignal.OFF"
+        ]
+    }
+}
