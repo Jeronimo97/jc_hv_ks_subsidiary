@@ -1,18 +1,12 @@
 {
-    "currentSignal": "jckssignal",
-    "nextSignal": "jckssignal",
+    "currentSignals": ["jckssignal"],
+    "nextSignals": ["jckssignal"],
     "savedPredicates": {
         "stop": "config(kombisignal.HP0) || config(kombisignal.KS_ZS1) || config(kombisignal.KS_ZS7) || config(kombisignal.KS_SHUNTING) || config(kombisignal_main.HP0) || config(kombisignal_main.KS_ZS1) || config(kombisignal_main.KS_ZS7) || config(kombisignal_main.KS_SHUNTING)",
         "drive": "config(kombisignal.KS1) || config(kombisignal_main.KS1) || config(kombisignal.KS1_BLINK) || config(kombisignal.KS2)",
         "zs3": "config(zs3.Z1) || config(zs3.Z2) || config(zs3.Z3) || config(zs3.Z4) || config(zs3.Z5) || config(zs3.Z6) || config(zs3.Z7) || config(zs3.Z8) || config(zs3.Z9) || config(zs3.Z10) || config(zs3.Z11) || config(zs3.Z12) || config(zs3.Z13) || config(zs3.Z14) || config(zs3.Z15)"
     },
     "values": {
-        "map(stop)": ["kombisignal.KS2", "kombisignal_main.KS1", "kombisignal_distant.KS2", "zs3v.OFF", "zs2v.OFF"],
-        "map(stop) && signalRepeater(true)": ["kombisignal_distant.KS2","ks_repeat.TRUE"],
-        "map(drive)": ["kombisignal.KS1", "kombisignal_main.KS1", "kombisignal_distant.KS1"],
-        "map(drive) && map(zs3)": ["kombisignal.KS1_BLINK", "kombisignal_main.KS1", "kombisignal_distant.KS1_BLINK"],
-        "map(drive) && map(zs3) && signalRepeater(true)": ["kombisignal_distant.KS1_BLINK", "ks_repeat.TRUE"],
-        
         "config(zs3.Z1)": ["zs3v.Z1"],
         "config(zs3.Z2)": ["zs3v.Z2"],
         "config(zs3.Z3)": ["zs3v.Z3"],
@@ -28,6 +22,12 @@
         "config(zs3.Z13)": ["zs3v.Z13"],
         "config(zs3.Z14)": ["zs3v.Z14"],
         "config(zs3.Z15)": ["zs3v.Z15"],
+
+        "map(stop)": ["kombisignal.KS2", "kombisignal_main.KS1", "kombisignal_distant.KS2", "zs3v.OFF", "zs2v.OFF"],
+        "map(stop) && signalRepeater(true)": ["kombisignal_distant.KS2", "ks_repeat.TRUE"],
+        "map(drive)": ["kombisignal.KS1", "kombisignal_main.KS1", "kombisignal_distant.KS1"],
+        "map(drive) && map(zs3)": ["kombisignal.KS1_BLINK", "kombisignal_main.KS1", "kombisignal_distant.KS1_BLINK"],
+        "map(drive) && map(zs3) && signalRepeater(true)": ["kombisignal_distant.KS1_BLINK", "ks_repeat.TRUE"],
 
         "speed(==.1)": ["zs3.Z1"],
         "speed(==.2)": ["zs3.Z2"],

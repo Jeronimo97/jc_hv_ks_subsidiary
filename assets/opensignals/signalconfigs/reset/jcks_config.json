@@ -1,5 +1,5 @@
 {
-    "currentSignal": "jckssignal",
+    "currentSignals": ["jckssignal"],
     "values": {
         "true": [
             "kombisignal_distant.KS2",

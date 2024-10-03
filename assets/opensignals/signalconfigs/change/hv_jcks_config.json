@@ -1,15 +1,11 @@
 {
-    "currentSignal": "hvsignal",
-    "nextSignal": "jckssignal",
+    "currentSignals": ["hvsignal", "hvsignalbridge"],
+    "nextSignals": ["jckssignal"],
     "savedPredicates": {
         "stop": "config(kombisignal.HP0) || config(kombisignal.KS_ZS1) || config(kombisignal.KS_ZS7) || config(kombisignal.KS_SHUNTING) || config(kombisignal_main.HP0) || config(kombisignal_main.KS_ZS1) || config(kombisignal_main.KS_ZS7) || config(kombisignal_main.KS_SHUNTING)",
         "drive": "config(kombisignal.KS1) || config(kombisignal_main.KS1) || config(kombisignal.KS1_BLINK) || config(kombisignal.KS2)"
     },
     "values": {
-        "map(stop)": ["distantsignal.VR0", "zs3v.OFF"],
-        "map(drive)": ["distantsignal.VR1"],
-        "signalRepeater(true)": ["vrlight.true"],
-
         "config(zs3.Z1)": ["zs3v.Z1", "distantsignal.VR2"],
         "config(zs3.Z2)": ["zs3v.Z2", "distantsignal.VR2"],
         "config(zs3.Z3)": ["zs3v.Z3", "distantsignal.VR2"],
@@ -25,6 +21,10 @@
         "config(zs3.Z13)": ["zs3v.Z13", "distantsignal.VR1"],
         "config(zs3.Z14)": ["zs3v.Z14", "distantsignal.VR1"],
         "config(zs3.Z15)": ["zs3v.Z15", "distantsignal.VR1"],
+
+        "map(stop)": ["distantsignal.VR0", "zs3v.OFF"],
+        "map(drive)": ["distantsignal.VR1"],
+        "signalRepeater(true)": ["vrlight.true"],
 
         "speed(<.1) || speed(>.15)": ["stopsignal.HP1", "hphome.HP1", "hpblock.HP1"],
         "speed(==.1)": ["zs3.Z1", "stopsignal.HP2", "hphome.HP2", "hpblock.HP1"],

@@ -1,5 +1,5 @@
 {
-    "currentSignal": "jchvsignal",
+    "currentSignals": ["jchvsignal"],
     "values": {
         "true": [
             "stopsignal.HP0",
