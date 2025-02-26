@@ -1,5 +1,5 @@
 {
-    "currentSignal": "jckssignal",
+    "currentSignals": ["jckssignal"],
     "values": {
         "speed(==.1)": ["zs3.Z1"],
         "speed(==.2)": ["zs3.Z2"],
